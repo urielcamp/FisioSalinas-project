@@ -1,4 +1,178 @@
-/*# sourceMappingURL=style.css.map */
-body{
-    background-color: antiquewhite;
+/* Reset.css - Advanced Professional Version */
+/* Box sizing border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+dl, dd, ol, ul, figure, hr, fieldset, legend, button,
+input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove quotes from blockquote and q */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: "";
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Make images and embeds responsive */
+embed, object, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove border from images inside links */
+a {
+  border: 0;
+}
+
+/* Reset form elements */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+/* Remove inner border and padding in Firefox */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Correct the inability to style clickable types in iOS */
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+/* Remove the default button styles in other browsers */
+button, [type=button], [type=reset], [type=submit] {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* Remove focus outline */
+:focus {
+  outline: none;
+}
+
+/* Set a consistent background color and font color for the body */
+body {
+  background-color: white;
+  color: #333;
+}
+
+/* Set consistent border for all elements */
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Remove all animations and transitions for people who prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Reset table elements */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td, th {
+  padding: 0;
+}
+
+/* Ensure links have consistent color */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Reset heading font sizes */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  margin-left: 30px;
+}
+header h1 div {
+  background-size: cover;
+  -webkit-clip-path: none;
+          clip-path: none;
+  width: 120px;
+  height: 60px;
+}
+header nav {
+  margin-right: 60px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #201e1e;
+  padding: 8px 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #2196f3;
+}/*# sourceMappingURL=style.css.map */
