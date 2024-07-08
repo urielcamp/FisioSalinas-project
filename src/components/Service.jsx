@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+
 
 const Service = () => {
-  return (
-    <section>
-      service
-    </section>
-  )
-}
+    return (
+        <section className='service-container'>
 
-export default Service
+        </section>
+    );
+};
+
+export default Service;

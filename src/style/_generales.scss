@@ -87,7 +87,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 /* Set a consistent background color and font color for the body */
 body {
-    background-color: #ffff;
+    background-color: #fff;
     color: #333;
 }
 
@@ -134,6 +134,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 //  PALETA DE COLORES DEL PROYECTO
@@ -142,3 +145,6 @@ h1, h2, h3, h4, h5, h6 {
 //Azul claro: #2196f3
 //Blanco: #ffffff
 //Gris claro: #f5f5f5
+
+//Verde oscuro: #6d7c5a
+//Azul marino: #0d47a1

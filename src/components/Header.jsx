@@ -3,12 +3,13 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header>
+    <header id='header'>
 
       <h1 className='logo'>
 
-        <div>
-          <img src="../assets/logo.jpg" alt="Logo Fisioterapeuta Salinas" />
+        <div className='titleContainer'>
+          <a href="#"><h1>Fisio Salinas</h1></a>
+          
         </div>
 
       </h1>
@@ -19,7 +20,7 @@ const Header = () => {
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Servicios</a></li>
           <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
 
       </nav>

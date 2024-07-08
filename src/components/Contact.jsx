@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className='contact-container'>
+    <section className='contact-container' id='contact'>
       <div className='form-container'>
         <form action="/submit_contact_form" method="post">
           <label htmlFor="nombre">Nombre:</label>

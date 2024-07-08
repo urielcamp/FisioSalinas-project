@@ -2,7 +2,16 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>about</div>
+    <section className='about-Container'>
+      <article className='physicalTerapy-container'>
+
+      </article>
+
+      <article className='tera'>
+
+      </article>
+
+    </section>
   )
 }
 

@@ -87,7 +87,7 @@ button, [type=button], [type=reset], [type=submit] {
 
 /* Set a consistent background color and font color for the body */
 body {
-  background-color: white;
+  background-color: #fff;
   color: #333;
 }
 
@@ -135,6 +135,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contact-container {
   width: 100%;
   height: 100vh;
@@ -159,29 +163,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
   width: 100%;
   height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
-header h1 {
+header .titleContainer {
   margin-left: 30px;
+  width: 100%;
+  align-items: center;
 }
-header h1 div {
-  background-size: cover;
-  -webkit-clip-path: none;
-          clip-path: none;
-  width: 120px;
-  height: 60px;
+header .titleContainer h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #689f38;
+  cursor: pointer;
 }
-header nav {
+
+nav {
   margin-right: 60px;
 }
-header nav ul {
+nav ul {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -189,18 +198,108 @@ header nav ul {
   margin: 0;
   padding: 0;
 }
-header nav ul li a {
+nav ul li a {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #201e1e;
   padding: 8px 12px;
   transition: color 0.3s ease, background-color 0.3s ease;
+  scroll-behavior: smooth;
 }
-header nav ul li a:hover {
-  color: #2196f3;
+nav ul li a:hover {
+  color: #8bc34a;
+}
+
+.service-container {
+  width: 100%;
+  height: 100vh;
+}
+.service-container .fistArticle-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-container {
   width: 100%;
   height: 85vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 100px;
+  box-sizing: border-box;
+}
+.hero-container .textHero-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.hero-container .textHero-container h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.hero-container .textHero-container h1 span {
+  font-size: 37px;
+  color: #689f38;
+}
+.hero-container .textHero-container .textHero {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.hero-container .textHero-container .buttonHero {
+  border: none;
+  border-radius: 25px;
+  background-color: #8bc34a;
+  color: #ffffff;
+  width: 160px;
+  height: 45px;
+  font-size: 1em;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  scroll-behavior: smooth;
+}
+.hero-container .textHero-container .buttonHero:hover {
+  background-color: #689f38;
+  transform: scale(1.05);
+}
+.hero-container .imgHero-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container .imgHero-container .imgHero {
+  background-color: #689f38;
+  -webkit-clip-path: path("M 50 600 L 50,140 A 5,5 0,0,1 300, 140 L 300 600 z");
+          clip-path: path("M 50 600 L 50,140 A 5,5 0,0,1 300, 140 L 300 600 z");
+  width: 100%;
+  height: 100%;
+}
+
+.info-container {
+  width: 100%;
+  height: 40vh;
+  background-color: #62744b;
+  display: grid;
+  align-items: center;
+  margin-top: 40px;
+}
+.info-container .textInfo {
+  text-align: center;
+  color: #f7ffee;
+  padding: 40px;
+  font-size: 22px;
 }/*# sourceMappingURL=style.css.map */
