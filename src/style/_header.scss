@@ -22,6 +22,10 @@ header {
                 color: #689f38;
                 cursor: pointer;
             }
+            h1:hover{
+                color: #5f7493;
+                transition: 500ms;
+            }
         }
     }
 
@@ -47,7 +51,7 @@ header {
                 scroll-behavior: smooth;
 
             &:hover {
-                color: #8bc34a; 
+                color: #5f7493; 
                 }
             }
             }

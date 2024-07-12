@@ -1,11 +1,100 @@
 .service-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 
-    .fistArticle-service{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+
+    .tituloService{
+        font-size: 38px;
+        font-weight: 400;
+        color: #5f7493;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .fArticleService-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr; 
+        width: 100%;
+        height: 450px;
+        justify-items: center;
         align-items: center;
+
+    
+    
+        .imgService-container {
+            background-color: #689f38;
+            width: 90%; 
+            height: 90%; 
+            margin-left: 40px;
+
+        }
+        
+        .textService-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 50%;
+            justify-content: flex-start;
+        
+        
+        
+            h3{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                text-align: center;
+                width: 70%;
+                font-size: 18px;
+            }
+
+    }
+
+}
+
+    .sArticleService-contaner{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        width: 100%;
+        height: 450px;
+        justify-items: center;
+        align-items: center;
+    
+            .imgService-container{
+                background-color: #689f38;
+                width: 90%; 
+                height: 90%; 
+                margin-right: 40px;
+    
+            }
+
+            .textService-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 60%;
+                justify-content: flex-start;
+            
+            
+            
+
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    text-align: center;
+                    width: 70%;
+                    font-size: 18px;
+                }
+
+            }
+
     }
 }

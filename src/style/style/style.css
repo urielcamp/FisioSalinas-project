@@ -139,6 +139,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .contact-container {
   width: 100%;
   height: 100vh;
@@ -186,6 +190,10 @@ header .titleContainer h1 {
   color: #689f38;
   cursor: pointer;
 }
+header .titleContainer h1:hover {
+  color: #5f7493;
+  transition: 500ms;
+}
 
 nav {
   margin-right: 60px;
@@ -207,23 +215,88 @@ nav ul li a {
   scroll-behavior: smooth;
 }
 nav ul li a:hover {
-  color: #8bc34a;
+  color: #5f7493;
 }
 
 .service-container {
   width: 100%;
-  height: 100vh;
-}
-.service-container .fistArticle-service {
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+}
+.service-container .tituloService {
+  font-size: 38px;
+  font-weight: 400;
+  color: #5f7493;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.service-container .fArticleService-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  width: 100%;
+  height: 450px;
+  justify-items: center;
+  align-items: center;
+}
+.service-container .fArticleService-container .imgService-container {
+  background-color: #689f38;
+  width: 90%;
+  height: 90%;
+  margin-left: 40px;
+}
+.service-container .fArticleService-container .textService-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  justify-content: flex-start;
+}
+.service-container .fArticleService-container .textService-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.service-container .fArticleService-container .textService-container p {
+  text-align: center;
+  width: 70%;
+  font-size: 18px;
+}
+.service-container .sArticleService-contaner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  width: 100%;
+  height: 450px;
+  justify-items: center;
+  align-items: center;
+}
+.service-container .sArticleService-contaner .imgService-container {
+  background-color: #689f38;
+  width: 90%;
+  height: 90%;
+  margin-right: 40px;
+}
+.service-container .sArticleService-contaner .textService-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  justify-content: flex-start;
+}
+.service-container .sArticleService-contaner .textService-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.service-container .sArticleService-contaner .textService-container p {
+  text-align: center;
+  width: 70%;
+  font-size: 18px;
 }
 
 .hero-container {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   background-color: #ffffff;
   display: flex;
   justify-content: space-evenly;
@@ -276,7 +349,7 @@ nav ul li a:hover {
 }
 .hero-container .imgHero-container {
   width: 30%;
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +365,7 @@ nav ul li a:hover {
 .info-container {
   width: 100%;
   height: 40vh;
-  background-color: #62744b;
+  background-color: #689f38;
   display: grid;
   align-items: center;
   margin-top: 40px;
@@ -300,6 +373,41 @@ nav ul li a:hover {
 .info-container .textInfo {
   text-align: center;
   color: #f7ffee;
-  padding: 40px;
+  padding: 60px;
   font-size: 22px;
+}
+
+.proceeds-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.proceeds-container .proceeds {
+  background-color: #4d5c72;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.proceeds-container .proceeds .title-proceeds {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  padding: 40px;
+}
+.proceeds-container .proceeds .ul-proceeds {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 10px 20px 40px 80px;
+  list-style: disc;
+}
+.proceeds-container .proceeds .ul-proceeds .list-proceeds {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
