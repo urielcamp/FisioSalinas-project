@@ -2,14 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className='about-Container'>
+    <section id='about' className='about-Container'>
       <article className='physicalTerapy-container'>
 
       </article>
 
-      <article className='tera'>
-
-      </article>
 
     </section>
   )

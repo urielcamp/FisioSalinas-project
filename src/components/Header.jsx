@@ -18,9 +18,9 @@ const Header = () => {
 
         <ul>
           <li><a href="#">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
           <li><a href="#service">Tratamientos</a></li>
           <li><a href="#proceeds">Beneficios</a></li>
-          <li><a href="#">Nosotros</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
 
