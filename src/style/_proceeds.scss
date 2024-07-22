@@ -1,9 +1,10 @@
 .proceeds-container{
 
+
     width: 100%;
     height: 100%;
     display: grid;
-    align-items: stretch;
+    align-items: center;
     justify-items: center;
 
         .title-proceeds{
@@ -15,13 +16,13 @@
         }
 
         .proceeds{
-
+            
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100%;
-            height: 100%;
 
             .card-proceeds{
                 width: 20%;

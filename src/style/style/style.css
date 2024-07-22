@@ -146,6 +146,42 @@ html {
 .about-Container {
   width: 100%;
   height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.about-Container .about {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.about-Container .about .container-img {
+  background-color: #689f38;
+  width: 45%;
+  height: 400px;
+  margin: 40px;
+  border-radius: 20px;
+}
+.about-Container .about .container-textAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+  gap: 20px;
+}
+.about-Container .about .container-textAbout .title-about {
+  font-size: 34px;
+  font-weight: 400;
+  font-weight: bold;
+  color: #2b3b53;
+}
+.about-Container .about .container-textAbout .text-about {
+  text-align: start;
 }
 
 .contact-container {
@@ -174,7 +210,7 @@ html {
 header {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   height: 15vh;
   display: flex;
@@ -373,7 +409,6 @@ nav ul li a:hover {
   background-color: #689f38;
   display: grid;
   align-items: center;
-  margin-top: 40px;
 }
 .info-container .textInfo {
   text-align: center;
@@ -386,7 +421,7 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   display: grid;
-  align-items: stretch;
+  align-items: center;
   justify-items: center;
 }
 .proceeds-container .title-proceeds {
@@ -397,12 +432,12 @@ nav ul li a:hover {
   margin-bottom: 40px;
 }
 .proceeds-container .proceeds {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 }
 .proceeds-container .proceeds .card-proceeds {
   width: 20%;
