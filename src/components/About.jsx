@@ -15,7 +15,7 @@ const About = () => {
         <div className='container-textAbout'>
           
           <h2 className='title-about'>
-            Licenciado Richard Ferreira
+            DT. Richard Ferreira
           </h2>
 
           <p className='text-about'>

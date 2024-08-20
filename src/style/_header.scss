@@ -12,6 +12,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
 
+
     .titleContainer{
             margin-left: 30px;
             width: 100%;
@@ -19,11 +20,12 @@ header {
             h1{
                 font-size: 34px;
                 font-weight: bold;
+                
                 color: #689f38;
                 cursor: pointer;
             }
             h1:hover{
-                color: #5f7493;
+                color: #8bc34a;
                 transition: 500ms;
             }
         }
@@ -51,7 +53,7 @@ header {
                 scroll-behavior: smooth;
 
             &:hover {
-                color: #5f7493; 
+                color: #689f38;
                 }
             }
             }

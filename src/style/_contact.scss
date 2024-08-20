@@ -2,28 +2,77 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+
 
     .form-container{
 
-        display: grid;
-        width: 60%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         height: 100%;
-        align-items: center;
-        justify-items: center;
+        max-width: 600px; /* Ancho máximo para el formulario */
+        background-color: #ffffff; /* Fondo blanco para el formulario */
+        padding: 20px;
+        border-radius: 10px;
+        //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el formulario */
+
+        .titleContact{
+            font-size: 38px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #333; /* Color del texto del encabezado */
+        }
 
         form{
             display: flex;
             flex-direction: column;
+            gap: 15px; /* Espaciado entre los elementos del formulario */
+            height: 100%;
 
+
+            label {
+                font-size: 0.9rem;
+                color: #555; /* Color del texto de las etiquetas */
+                margin-bottom: 5px; /* Espaciado debajo de las etiquetas */
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc; /* Borde gris claro */
+                font-size: 1rem;
+            }
+            
+            /* Textarea styling */
+            textarea {
+                resize: vertical; /* Permitir el cambio de tamaño solo verticalmente */
+            }
+            
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Color de fondo del botón */
+            color: #ffffff; /* Color del texto del botón */
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave en el color de fondo */
+        }
+        
+        button:hover {
+            background-color: #0056b3; /* Color del botón al pasar el cursor */
+        }
+        
+        button:focus {
+            outline: none; /* Eliminar el borde de enfoque predeterminado */
         }
     }
 
-
-    .information-container{
-        width: 40%;
-        height: 100%;
-        background-color: rgb(66, 66, 66);
-
-    }
 }

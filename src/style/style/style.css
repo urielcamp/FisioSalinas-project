@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset.css - Advanced Professional Version */
 /* Box sizing border-box */
 *, *::before, *::after {
@@ -87,7 +88,7 @@ button, [type=button], [type=reset], [type=submit] {
 
 /* Set a consistent background color and font color for the body */
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -139,11 +140,8 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .about-Container {
+  background-color: #ffffff;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -157,13 +155,14 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 .about-Container .about .container-img {
   background-color: #689f38;
   width: 45%;
-  height: 400px;
+  height: 80%;
   margin: 40px;
-  border-radius: 20px;
+  border-radius: 10px 60px 10px 60px;
 }
 .about-Container .about .container-textAbout {
   display: flex;
@@ -188,23 +187,68 @@ html {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .contact-container .form-container {
-  display: grid;
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
-  align-items: center;
-  justify-items: center;
+  max-width: 600px; /* Ancho máximo para el formulario */
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-container .form-container .titleContact {
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333; /* Color del texto del encabezado */
 }
 .contact-container .form-container form {
   display: flex;
   flex-direction: column;
-}
-.contact-container .information-container {
-  width: 40%;
+  gap: 15px; /* Espaciado entre los elementos del formulario */
   height: 100%;
-  background-color: rgb(66, 66, 66);
+  /* Textarea styling */
+}
+.contact-container .form-container form label {
+  font-size: 0.9rem;
+  color: #555; /* Color del texto de las etiquetas */
+  margin-bottom: 5px; /* Espaciado debajo de las etiquetas */
+}
+.contact-container .form-container form input, .contact-container .form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 1rem;
+}
+.contact-container .form-container form textarea {
+  resize: vertical; /* Permitir el cambio de tamaño solo verticalmente */
+}
+.contact-container .form-container button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave en el color de fondo */
+}
+.contact-container .form-container button:hover {
+  background-color: #0056b3; /* Color del botón al pasar el cursor */
+}
+.contact-container .form-container button:focus {
+  outline: none; /* Eliminar el borde de enfoque predeterminado */
+}
+
+footer {
+  padding: 20px;
+  height: 60vh;
+  width: 100%;
 }
 
 header {
@@ -232,7 +276,7 @@ header .titleContainer h1 {
   cursor: pointer;
 }
 header .titleContainer h1:hover {
-  color: #5f7493;
+  color: #8bc34a;
   transition: 500ms;
 }
 
@@ -256,7 +300,7 @@ nav ul li a {
   scroll-behavior: smooth;
 }
 nav ul li a:hover {
-  color: #5f7493;
+  color: #689f38;
 }
 
 .service-container {
@@ -270,69 +314,149 @@ nav ul li a:hover {
 .service-container .tituloService {
   font-size: 38px;
   font-weight: 400;
-  color: #2b3b53;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .service-container .fArticleService-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.service-container .fArticleService-container .content-service {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.2fr 1.5fr;
   width: 100%;
   height: 450px;
   justify-items: center;
   align-items: center;
 }
-.service-container .fArticleService-container .imgService-container {
+.service-container .fArticleService-container .content-service .imgService-container {
   background-color: #689f38;
   width: 90%;
   height: 70%;
   margin-left: 40px;
   border-radius: 20px;
 }
-.service-container .fArticleService-container .textService-container {
+.service-container .fArticleService-container .content-service .textService-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.service-container .fArticleService-container .textService-container h3 {
+.service-container .fArticleService-container .content-service .textService-container h3 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-.service-container .fArticleService-container .textService-container p {
+.service-container .fArticleService-container .content-service .textService-container p {
   text-align: center;
   width: 70%;
   font-size: 18px;
 }
+.service-container .fArticleService-container .cards-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.service-container .fArticleService-container .cards-service .card-service {
+  background-color: #ffffff;
+  width: 20%;
+  height: 100%;
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  padding: 20px;
+}
+.service-container .fArticleService-container .cards-service .card-service:hover {
+  transform: translateY(-15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+.service-container .fArticleService-container .cards-service .title-card {
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  color: #333;
+}
+.service-container .fArticleService-container .cards-service .text-card {
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
 .service-container .sArticleService-contaner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.service-container .sArticleService-contaner .content-service {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1.2fr;
   width: 100%;
   height: 450px;
   justify-items: center;
   align-items: center;
 }
-.service-container .sArticleService-contaner .imgService-container {
+.service-container .sArticleService-contaner .content-service .imgService-container {
   background-color: #689f38;
   width: 90%;
   height: 70%;
   margin-right: 40px;
   border-radius: 20px;
 }
-.service-container .sArticleService-contaner .textService-container {
+.service-container .sArticleService-contaner .content-service .textService-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.service-container .sArticleService-contaner .textService-container h3 {
+.service-container .sArticleService-contaner .content-service .textService-container h3 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-.service-container .sArticleService-contaner .textService-container p {
+.service-container .sArticleService-contaner .content-service .textService-container p {
   text-align: center;
   width: 70%;
   font-size: 18px;
+}
+.service-container .sArticleService-contaner .cards-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.service-container .sArticleService-contaner .cards-service .card-service {
+  width: 20%;
+  height: 100%;
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  padding: 20px;
+}
+.service-container .sArticleService-contaner .cards-service .card-service:hover {
+  transform: translateY(-15px);
+  transition: 500ms;
+  cursor: pointer;
+}
+.service-container .sArticleService-contaner .cards-service .title-card {
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+}
+.service-container .sArticleService-contaner .cards-service .text-card {
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
 }
 
 .hero-container {
@@ -405,16 +529,15 @@ nav ul li a:hover {
 
 .info-container {
   width: 100%;
-  height: 40vh;
+  height: 15vh;
   background-color: #689f38;
   display: grid;
   align-items: center;
 }
 .info-container .textInfo {
   text-align: center;
-  color: #f7ffee;
-  padding: 60px;
-  font-size: 22px;
+  color: #fafafa;
+  font-size: 20px;
 }
 
 .proceeds-container {
@@ -427,38 +550,7 @@ nav ul li a:hover {
 .proceeds-container .title-proceeds {
   font-size: 38px;
   font-weight: 400;
-  color: #2b3b53;
+  color: #333;
   margin-top: 60px;
   margin-bottom: 40px;
-}
-.proceeds-container .proceeds {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.proceeds-container .proceeds .card-proceeds {
-  width: 20%;
-  height: 300px;
-  margin: 50px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.proceeds-container .proceeds .icon-proceeds {
-  width: 94px;
-  height: 94px;
-}
-.proceeds-container .proceeds .title-card {
-  font-size: 22px;
-  text-align: center;
-}
-.proceeds-container .proceeds .text-card {
-  text-align: center;
-  font-size: 14px;
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */
