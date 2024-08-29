@@ -1,22 +1,24 @@
 import React from 'react'
+import dt from '../img/dt.jpeg';
+import vd from '../img/instalaciones.mp4';
 
 const About = () => {
   return (
     <section id='about' className='about-Container'>
 
-      <article className='about'>
+      <article className='about-dt'>
 
         <div className='container-img'>
 
-          <img src="" alt="" />
+          <img src={dt} alt="img dt" />
 
         </div>
 
         <div className='container-textAbout'>
           
-          <h2 className='title-about'>
+          <h3 className='title-about'>
             DT. Richard Ferreira
-          </h2>
+          </h3>
 
           <p className='text-about'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vero nihil quasi aspernatur soluta,
@@ -31,9 +33,19 @@ const About = () => {
 
       </article>
 
+      <article className='about-it'>
+        <h2>
+          Nuestas Instalaciones
+        </h2>
+
+        <video src={vd} autoPlay></video>
+
+      </article>
+
 
     </section>
   )
 }
 
 export default About
+

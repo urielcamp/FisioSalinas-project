@@ -143,12 +143,13 @@ html {
 .about-Container {
   background-color: #ffffff;
   width: 100%;
-  height: 100vh;
-  display: grid;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  gap: 50px;
 }
-.about-Container .about {
+.about-Container .about-dt {
   width: 90%;
   height: 90%;
   display: flex;
@@ -157,14 +158,26 @@ html {
   justify-content: center;
   gap: 30px;
 }
-.about-Container .about .container-img {
-  background-color: #689f38;
+.about-Container .about-dt .container-img {
   width: 45%;
-  height: 80%;
+  height: 70vh;
   margin: 40px;
   border-radius: 10px 60px 10px 60px;
 }
-.about-Container .about .container-textAbout {
+.about-Container .about-dt .container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 60px 10px 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-Container .about-dt .container-img img:hover {
+  cursor: pointer;
+  width: 105%;
+  height: 105%;
+  transition: 500ms;
+}
+.about-Container .about-dt .container-textAbout {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -173,19 +186,41 @@ html {
   height: 100%;
   gap: 20px;
 }
-.about-Container .about .container-textAbout .title-about {
+.about-Container .about-dt .container-textAbout .title-about {
   font-size: 34px;
   font-weight: 400;
   font-weight: bold;
   color: #2b3b53;
 }
-.about-Container .about .container-textAbout .text-about {
+.about-Container .about-dt .container-textAbout .text-about {
   text-align: start;
+}
+.about-Container .about-it {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+.about-Container .about-it h2 {
+  font-size: 28px;
+  font-weight: 400;
+  font-weight: bold;
+  color: #2b3b53;
+}
+.about-Container .about-it video {
+  width: 80%;
+  height: 80vh;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact-container {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,7 +239,7 @@ html {
   font-size: 38px;
   font-weight: 400;
   margin-bottom: 20px;
-  color: #333; /* Color del texto del encabezado */
+  color: #2b3b53; /* Color del texto del encabezado */
 }
 .contact-container .form-container form {
   display: flex;
@@ -246,9 +281,40 @@ html {
 }
 
 footer {
+  background-color: rgb(9, 42, 66);
   padding: 20px;
-  height: 60vh;
+  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+footer div ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+footer div ul li {
+  color: rgb(245, 245, 245);
+}
+footer .dev, footer a {
+  color: rgb(245, 245, 245);
+}
+footer a:hover {
+  color: rgb(63, 134, 248);
+  transition: 500ms;
+}
+footer .copy {
+  color: rgb(245, 245, 245);
 }
 
 header {
@@ -314,7 +380,7 @@ nav ul li a:hover {
 .service-container .tituloService {
   font-size: 38px;
   font-weight: 400;
-  color: #333;
+  color: #2b3b53;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -348,6 +414,7 @@ nav ul li a:hover {
 .service-container .fArticleService-container .content-service .textService-container h3 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #2b3b53;
 }
 .service-container .fArticleService-container .content-service .textService-container p {
   text-align: center;
@@ -369,7 +436,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
   padding: 20px;
 }
@@ -379,14 +446,14 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .service-container .fArticleService-container .cards-service .title-card {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   width: 100%;
-  color: #333;
+  color: #2b3b53;
 }
 .service-container .fArticleService-container .cards-service .text-card {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   width: 100%;
 }
 .service-container .sArticleService-contaner {
@@ -419,6 +486,7 @@ nav ul li a:hover {
 .service-container .sArticleService-contaner .content-service .textService-container h3 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #2b3b53;
 }
 .service-container .sArticleService-contaner .content-service .textService-container p {
   text-align: center;
@@ -439,7 +507,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
   padding: 20px;
 }
@@ -449,13 +517,14 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .service-container .sArticleService-contaner .cards-service .title-card {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   width: 100%;
+  color: #2b3b53;
 }
 .service-container .sArticleService-contaner .cards-service .text-card {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   width: 100%;
 }
 
@@ -529,28 +598,37 @@ nav ul li a:hover {
 
 .info-container {
   width: 100%;
-  height: 15vh;
-  background-color: #689f38;
-  display: grid;
-  align-items: center;
-}
-.info-container .textInfo {
-  text-align: center;
-  color: #fafafa;
-  font-size: 20px;
-}
-
-.proceeds-container {
-  width: 100%;
-  height: 100%;
+  height: 90vh;
   display: grid;
   align-items: center;
   justify-items: center;
 }
+.info-container .textInfo {
+  text-align: center;
+  color: rgb(9, 42, 66);
+  font-size: 28px;
+  font-weight: 300;
+  padding: 30px;
+  width: 80%;
+}
+
+.proceeds-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 .proceeds-container .title-proceeds {
   font-size: 38px;
-  font-weight: 400;
-  color: #333;
+  color: #2b3b53;
   margin-top: 60px;
   margin-bottom: 40px;
+}
+.proceeds-container p {
+  font-size: 15px;
+  width: 70%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

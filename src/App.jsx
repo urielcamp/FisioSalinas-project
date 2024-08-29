@@ -23,7 +23,6 @@ const App = () => {
       <About/>
       <Service/>
       <Proceeds/>
-
       <Contact/>
       <Footer/>
     </>
@@ -31,3 +30,4 @@ const App = () => {
 }
 
 export default App
+

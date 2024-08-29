@@ -2,18 +2,37 @@
 
 
     width: 100%;
-    height: 100%;
-    display: grid;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    
+
 
         .title-proceeds{
             font-size: 38px;
-            font-weight: 400;
-            color: #333;
+            color: #2b3b53;
             margin-top: 60px;
             margin-bottom: 40px;
+            //align-items: center;
         }
+
+        //.proceeds{
+
+            
+
+            p{
+                font-size: 15px;
+                width: 70%;
+                text-align: center;
+                
+            }
+
+
+        //}
 
 
 
