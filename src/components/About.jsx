@@ -10,7 +10,7 @@ const About = () => {
 
         <div className='container-img'>
 
-          <img src={dt} alt="img dt" />
+          <img className='img-about' src={dt} alt="img dt" />
 
         </div>
 
@@ -32,16 +32,6 @@ const About = () => {
         </div>
 
       </article>
-
-      <article className='about-it'>
-        <h2>
-          Nuestas Instalaciones
-        </h2>
-
-        <video src={vd} autoPlay></video>
-
-      </article>
-
 
     </section>
   )

@@ -1,5 +1,7 @@
 import React from 'react';
-
+import tA from '../img/TratA.jpeg';
+import tB from '../img/TratB.jpeg';
+import tC from '../img/TratC.jpeg';
 
 const Service = () => {
     return (
@@ -9,7 +11,9 @@ const Service = () => {
 
             <article className='fArticleService-container'>
             <div className='content-service'>
-                    <div className='imgService-container'></div>
+
+                        <img className='imgService-container' src={tA} alt="img Tratamiento 1" />
+
 
                     <div className='textService-container'>
                         <h3>Tratamiento 1</h3>
@@ -67,7 +71,8 @@ const Service = () => {
                         </p>
                     </div>
 
-                    <div className='imgService-container'></div>
+                    <img className='imgService-container' src={tB} alt="img tratamiento 2" />
+                    
                 </div>
 
                 <div className='cards-service'>
@@ -111,7 +116,9 @@ const Service = () => {
             <article className='fArticleService-container'>
 
                 <div className='content-service'>
-                    <div className='imgService-container'></div>
+                    
+                    <img src={tC} alt="img tratamiento 3"  className='imgService-container'/>
+                    
 
                     <div className='textService-container'>
                         <h3>Tratamiento 3</h3>

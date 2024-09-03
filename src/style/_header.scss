@@ -21,11 +21,15 @@ header {
                 font-size: 34px;
                 font-weight: bold;
                 
-                color: #689f38;
+                color: #4f4f4f;
                 cursor: pointer;
+
+                span{
+                    color: #4aa3c3;
+                }
             }
             h1:hover{
-                color: #8bc34a;
+                color: #4aa3c3;
                 transition: 500ms;
             }
         }
@@ -34,16 +38,19 @@ header {
     nav {
 
         margin-right: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-        ul {
+        .ul-navbar {
             display: flex;
             flex-direction: row;
-            gap: 15px; 
+            gap: 10px; 
             list-style: none; 
             margin: 0;
             padding: 0;
 
-        li {
+        .li-navbar {
             a {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 18px;
@@ -53,11 +60,13 @@ header {
                 scroll-behavior: smooth;
 
             &:hover {
-                color: #689f38;
+                color: #4aa3c3;
                 }
             }
+        }
+
             }
         }
-    }
+    
 
 
