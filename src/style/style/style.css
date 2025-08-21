@@ -172,7 +172,6 @@ html {
      object-fit: cover;
 }
 .about-Container .about-dt .container-img .img-about:hover {
-  cursor: pointer;
   width: 105%;
   height: 105%;
   transition: 500ms;
@@ -421,7 +420,6 @@ nav .ul-navbar .li-navbar a:hover {
 .service-container .fArticleService-container .content-service .imgService-container {
   width: 530px;
   height: 380px;
-  margin-left: 40px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -429,6 +427,7 @@ nav .ul-navbar .li-navbar a:hover {
 .service-container .fArticleService-container .content-service .imgService-container:hover {
   width: 550px;
   height: 390px;
+  margin: 20px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -502,7 +501,6 @@ nav .ul-navbar .li-navbar a:hover {
 .service-container .sArticleService-contaner .content-service .imgService-container {
   width: 530px;
   height: 380px;
-  margin-right: 40px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -510,6 +508,7 @@ nav .ul-navbar .li-navbar a:hover {
 .service-container .sArticleService-contaner .content-service .imgService-container:hover {
   width: 550px;
   height: 390px;
+  margin: 20px;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -628,8 +627,7 @@ nav .ul-navbar .li-navbar a:hover {
 }
 .hero-container .imgHero-container .imgHero {
   background-color: #689f38;
-  -webkit-clip-path: path("M 50 600 L 50,140 A 5,5 0,0,1 300, 140 L 300 600 z");
-          clip-path: path("M 50 600 L 50,140 A 5,5 0,0,1 300, 140 L 300 600 z");
+  clip-path: path("M 50 600 L 50,140 A 5,5 0,0,1 300, 140 L 300 600 z");
   width: 100%;
   height: 100%;
 }
@@ -669,4 +667,52 @@ nav .ul-navbar .li-navbar a:hover {
   font-size: 15px;
   width: 70%;
   text-align: center;
+}
+
+.clinics {
+  padding: 2rem;
+  text-align: center;
+}
+.clinics h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.clinics__list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.clinics .clinics-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.clinics .clinic {
+  background: #f8f8f8;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+.clinics .clinic h3 {
+  color: #34495e;
+}
+.clinics .clinic p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+.clinics .clinic__button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+.clinics .clinic__button:hover {
+  background: #0056b3;
 }/*# sourceMappingURL=style.css.map */

@@ -34,7 +34,7 @@
         .imgService-container {
             width: 530px; 
             height: 380px; 
-            margin-left: 40px;
+            //margin-left: 40px;
             border-radius: 20px;
             object-fit: cover;
         }
@@ -42,7 +42,7 @@
             .imgService-container:hover{
                 width: 550px; 
                 height: 390px; 
-                //margin-right: 40px;
+                margin: 20px;
                 border-radius: 20px;
                 object-fit: cover;
                 transition: 500ms;
@@ -135,7 +135,7 @@
             .imgService-container{
                 width: 530px; 
                 height: 380px; 
-                margin-right: 40px;
+                //margin-right: 40px;
                 border-radius: 20px;
                 object-fit: cover;
             }
@@ -143,7 +143,7 @@
             .imgService-container:hover{
                 width: 550px; 
                 height: 390px; 
-                //margin-right: 40px;
+                margin: 20px;
                 border-radius: 20px;
                 object-fit: cover;
                 transition: 500ms;

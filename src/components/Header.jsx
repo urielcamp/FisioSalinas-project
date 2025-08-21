@@ -22,7 +22,6 @@ const Header = () => {
           <li className='li-navbar'><a href="#">Inicio</a></li>
           <li className='li-navbar'><a href="#about">Nosotros</a></li>
           <li className='li-navbar'><a href="#service">Tratamientos</a></li>
-          <li className='li-navbar'><a href="#proceeds">Beneficios</a></li>
           <li className='li-navbar'><a href="#contact">Contacto</a></li>
         </ul>
 

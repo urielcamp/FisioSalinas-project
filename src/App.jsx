@@ -11,8 +11,8 @@ import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Hero from './components/Hero.jsx'
 import Info from './components/Info.jsx'
-import Proceeds from './components/Proceeds.jsx'
-
+import Inf from './components/Inf.jsx'
+import Clinics from './components/Clinics.jsx'
 
 const App = () => {
   return (
@@ -22,8 +22,9 @@ const App = () => {
       <Info/>
       <About/>
       <Service/>
-      <Proceeds/>
+      <Inf/>
       <Contact/>
+      <Clinics/>
       <Footer/>
     </>
   )
