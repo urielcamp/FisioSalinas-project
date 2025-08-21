@@ -32,6 +32,7 @@ const Clinics = () => {
                 <img src={clinic.image} alt={clinic.name} />
                 <div className="clinic__overlay">
                 <h3>{clinic.name}</h3>
+                <p>{clinic.address}</p>
                 </div>
             </a>
             ))}
