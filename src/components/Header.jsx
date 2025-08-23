@@ -1,5 +1,5 @@
 import React from 'react';
-import iT from '../img/iconTel.png';
+import iT from '/img/iconTel.png';
 
 
 

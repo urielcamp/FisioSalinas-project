@@ -1,7 +1,7 @@
 import React from 'react';
-import tA from '../img/TratA.jpeg';
-import tB from '../img/TratB.jpeg';
-import tC from '../img/TratC.jpeg';
+import tA from '/img/TratA.jpeg';
+import tB from '/img/TratB.jpeg';
+import tC from '/img/TratC.jpeg';
 
 const Service = () => {
     return (

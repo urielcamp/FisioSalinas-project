@@ -1,6 +1,6 @@
 import React from 'react'
-import dt from '../img/dt.jpeg';
-import vd from '../img/instalaciones.mp4';
+import dt from '/img/dt.jpeg';
+import vd from '/img/instalaciones.mp4';
 
 const About = () => {
   return (

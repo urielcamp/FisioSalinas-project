@@ -1,0 +1,16 @@
+
+
+[
+    {
+        "name": "Clinica Salinas",
+        "address": "Salinas sur esq tu madre",
+        "mapsUrl": "https://www.google.com/maps/place/15100+Salinas,+Departamento+de+Canelones,+Uruguay/@-34.77363,-55.8774538,14z/data=!3m1!4b1!4m6!3m5!1s0x959ff5a3df136595:0x1f88b5f68b2bb5ae!8m2!3d-34.7720384!4d-55.8409668!16s%2Fm%2F0gvsdgd?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "image": "/img/salinas.png"
+    },
+    {
+        "name": "Clinica Carrasco",
+        "address": "Carrasco sur esq tu madre",
+        "mapsUrl": "https://www.google.com/maps/place/Carrasco,+Montevideo,+Departamento+de+Montevideo,+Uruguay/@-34.883591,-56.0932637,13z/data=!3m1!4b1!4m6!3m5!1s0x959f8668f57f7c21:0x90410130e1f9f3e6!8m2!3d-34.8850061!4d-56.0556603!16s%2Fm%2F025t94x?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "image": "/img/carrasco.png"
+    }
+]
