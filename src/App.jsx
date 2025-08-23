@@ -13,11 +13,13 @@ import Hero from './components/Hero.jsx'
 import Info from './components/Info.jsx'
 import Inf from './components/Inf.jsx'
 import Clinics from './components/Clinics.jsx'
+import WhatsAppButton from './components/WhatsAppButton.jsx'
 
 const App = () => {
   return (
     <>
       <Header/>
+      <WhatsAppButton/>
       <Hero/>
       <Info/>
       <About/>

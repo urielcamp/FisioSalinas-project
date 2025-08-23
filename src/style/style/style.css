@@ -766,4 +766,38 @@ nav .ul-navbar .li-navbar a:hover {
   .clinics .clinic__overlay p {
     font-size: 0.75rem;
   }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: 60px;
+    height: 60px;
+  }
+  .whatsapp-button img {
+    width: 25px;
+    height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
