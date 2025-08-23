@@ -672,47 +672,98 @@ nav .ul-navbar .li-navbar a:hover {
 .clinics {
   padding: 2rem;
   text-align: center;
+  height: 100vh;
 }
 .clinics h2 {
-  margin-bottom: 1.5rem;
   font-size: 2rem;
   color: #2c3e50;
-}
-.clinics__list {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
 }
 .clinics .clinics-lists {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .clinics .clinic {
-  background: #f8f8f8;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
-.clinics .clinic h3 {
-  color: #34495e;
+.clinics .clinic:hover {
+  transform: scale(1.03);
 }
-.clinics .clinic p {
-  font-size: 0.9rem;
-  margin: 0.5rem 0;
+.clinics .clinic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
-.clinics .clinic__button {
-  display: inline-block;
-  background: #007bff;
+.clinics .clinic__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.55);
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 0.5rem;
-  transition: background 0.3s ease;
+  text-align: left;
 }
-.clinics .clinic__button:hover {
-  background: #0056b3;
+.clinics .clinic__overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.clinics .clinic__overlay p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+}
+@media (max-width: 1024px) {
+  .clinics .clinic {
+    max-width: 350px;
+    height: 220px;
+  }
+  .clinics .clinic__overlay {
+    padding: 0.6rem;
+  }
+  .clinics .clinic__overlay h3 {
+    font-size: 1rem;
+  }
+  .clinics .clinic__overlay p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .clinics .clinics-lists {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .clinics .clinic {
+    max-width: 90%;
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .clinics {
+    padding: 1rem;
+  }
+  .clinics h2 {
+    font-size: 1.5rem;
+  }
+  .clinics .clinic {
+    height: 180px;
+  }
+  .clinics .clinic__overlay h3 {
+    font-size: 1rem;
+  }
+  .clinics .clinic__overlay p {
+    font-size: 0.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */

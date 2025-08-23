@@ -23,8 +23,8 @@ const App = () => {
       <About/>
       <Service/>
       <Inf/>
-      <Contact/>
       <Clinics/>
+      <Contact/>
       <Footer/>
     </>
   )
