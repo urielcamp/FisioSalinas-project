@@ -1,25 +1,33 @@
 import React from 'react';
 
-
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className='footer-content'>
-        <div className='footer-section'>
-          <p className='dev'>
-            Desarrollado por: <a href="https://www.linkedin.com/in/urielcampa%C3%B1a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </p>
+    <footer className="footer">
+      <div className="group-1">
+        <div className="box">
+          <figure>
+            <a href="#"><img src="/img/logo.jpg" alt="Logo" /></a>
+          </figure>
         </div>
-        <div className='footer-section'>
-          <p className='copy'>&copy; Desde 2024 Todos los derechos reservados.</p>
+
+        <div className="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, sint in dicta ipsam provident vitae ducimus minus, id assumenda cum expedita obcaecati? Dolorem, sequi libero vero fu</p>
         </div>
-        <div className='footer-section'>
-          <ul className='contact-list'>
-            <li><i className="fas fa-phone"></i> Tel: 091858010</li>
-            <li><i className="fas fa-envelope"></i> Email: edufisio1@hotmail.com</li>
-            <li><i className="fas fa-info-circle"></i> lalalala</li>
-          </ul>
+
+        <div className="box">
+          <h2>Nuestras Redes</h2>
+          <div className="social-networks">
+            <a href="#" className='fa-brands fa-facebook'></a>
+            <a href="#" className='fa-brands fa-instagram'></a>
+            <a href="#" className='fa-brands fa-whatsapp'></a>
+            <a href="#" className='fa-solid fa-envelope'></a>
+          </div>
         </div>
+      </div>
+
+      <div className="group-2">
+        <small>&copy; 2025 <b>FisioSalinas</b> - Todos los Derechos Reservados</small>
       </div>
     </footer>
   );

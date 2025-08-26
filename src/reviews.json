@@ -1,0 +1,62 @@
+[
+  {
+    "Nombre": "Laura",
+    "Apellido": "Fernández",
+    "Estrellas": 5,
+    "Comentario": "Excelente atención, muy profesional y con un trato humano inigualable."
+  },
+  {
+    "Nombre": "Martín",
+    "Apellido": "Pérez",
+    "Estrellas": 4,
+    "Comentario": "Muy buen servicio, me ayudó mucho con mis dolores de espalda."
+  },
+  {
+    "Nombre": "Camila",
+    "Apellido": "Rodríguez",
+    "Estrellas": 5,
+    "Comentario": "Me explicó cada ejercicio y me dio confianza durante el tratamiento."
+  },
+  {
+    "Nombre": "Andrés",
+    "Apellido": "Gómez",
+    "Estrellas": 3,
+    "Comentario": "El servicio es bueno, aunque tuve que esperar un poco más de lo previsto."
+  },
+  {
+    "Nombre": "Valentina",
+    "Apellido": "Silva",
+    "Estrellas": 5,
+    "Comentario": "En pocas sesiones noté una gran mejoría, totalmente recomendable."
+  },
+  {
+    "Nombre": "Diego",
+    "Apellido": "Sosa",
+    "Estrellas": 4,
+    "Comentario": "Muy buen fisioterapeuta, ambiente agradable y atención personalizada."
+  },
+  {
+    "Nombre": "Sofía",
+    "Apellido": "López",
+    "Estrellas": 5,
+    "Comentario": "El mejor fisioterapeuta que he visitado, realmente se preocupa por el paciente."
+  },
+  {
+    "Nombre": "Gabriel",
+    "Apellido": "Castro",
+    "Estrellas": 2,
+    "Comentario": "El lugar es bueno, pero no sentí demasiada mejoría en mi caso."
+  },
+  {
+    "Nombre": "Florencia",
+    "Apellido": "Méndez",
+    "Estrellas": 5,
+    "Comentario": "Un profesional muy dedicado, me ayudó a recuperarme después de mi lesión."
+  },
+  {
+    "Nombre": "Javier",
+    "Apellido": "Ramírez",
+    "Estrellas": 4,
+    "Comentario": "Muy buena experiencia, lo recomiendo a cualquier persona con dolores musculares."
+  }
+]
