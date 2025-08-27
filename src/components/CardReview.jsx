@@ -1,35 +1,26 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import "./Card.scss";
-
-const Card = ({ url }) => {
-  const [pokemon, setPokemon] = useState(null);
-
-  const getPokemon = async () => {
-    await axios
-      .get(url)
-      .then(({ data }) => setPokemon(data))
-      .catch((error) => console.error(error));
-  };
-
-  useEffect(() => {
-    getPokemon();
-  }, []);
-
+const CardReview = ({ review }) => {
   return (
     <div className="card">
-      <img src={pokemon?.sprites?.front_default} alt={pokemon?.name} />
       <div className="data">
-        <p>{pokemon?.name}</p>
-        <div className="types">
-          {pokemon?.types.map(({ type, slot }) => (
-            <span key={slot}>{type?.name}</span>
+        <p>{review?.Nombre} {review?.Apellido}</p>
+      </div>
+        <div className="stars">
+          {Array.from({ length: review?.Estrellas || 0 }).map((_, i) => (
+            <span key={i} className="fa-solid fa-star"></span>
+          ))}
+          {Array.from({ length: 5 - (review?.Estrellas || 0) }).map((_, i) => (
+            <span key={`e${i}`} className="fa-regular fa-star"></span>
           ))}
         </div>
-      </div>
+        <div className="comment">
+          <p>{review?.Comentario}</p>
+        </div>
+      
     </div>
   );
 };
 
-export default Card;
+export default CardReview;
