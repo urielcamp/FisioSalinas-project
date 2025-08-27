@@ -6,11 +6,11 @@ const WhatsAppButton = () => {
 
 return (
         <a
-        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-button"
-        aria-label="Contactar por WhatsApp"
+            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-button"
+            aria-label="Contactar por WhatsApp"
         >
         <img
             src="/img/wapp.png"
