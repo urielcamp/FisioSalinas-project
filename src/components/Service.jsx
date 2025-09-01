@@ -5,165 +5,114 @@ import tC from '/img/TratC.jpeg';
 
 const Service = () => {
     return (
-        <section className='service-container' id='service'>
+      
+    <section className='service-section'>
+        <h2 className='service-title'>Ofrecemos</h2>
 
-            <h2 className='tituloService'>Tratamientos</h2>
+        <div className='service-container'>
 
-            <article className='fArticleService-container'>
-            <div className='content-service'>
+            <div className='service'>
+                
+                <div className="img-container">
+                    <img src={tA} alt="Imagen-Tratamiento-1"/>
+                </div>
+                
+                <div className='textService-container'>
+                    <h3 className="service-SubTitle">Tratamiento 1</h3>
+                    <p className="text-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam, unde placeat non perferendis excepturi rerum voluptate, at nostrum vitae quo facere nihil quibusdam eligendi incidunt cupiditate animi sit odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic tenetur exercitationem amet, officiis alias quisquam, voluptas quae architecto molestiae eaque suscipit magnam non expedita dolores. Ab praesentium saepe eum alias?</p>
+                </div>
+            </div>
 
-                        <img className='imgService-container' src={tA} alt="img Tratamiento 1" />
+                <div className='card-background'>
+                    <div className="card-container">
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+                                
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+                    </div>
+                </div>
 
 
-                    <div className='textService-container'>
-                        <h3>Tratamiento 1</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic tenetur exercitationem amet, officiis alias quisquam, voluptas quae architecto molestiae eaque suscipit magnam non expedita dolores. Ab praesentium saepe eum alias?
-                        </p>
+
+
+            <div className='service izquierda'>
+                
+                <div className='textService-container'>
+                    <h3 className="service-SubTitle">Tratamiento 2</h3>
+                    <p className="text-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam, unde placeat non perferendis excepturi rerum voluptate, at nostrum vitae quo facere nihil quibusdam eligendi incidunt cupiditate animi sit odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic tenetur exercitationem amet, officiis alias quisquam, voluptas quae architecto molestiae eaque suscipit magnam non expedita dolores. Ab praesentium saepe eum alias?</p>
+                </div>
+                
+                <div className="img-container img-izquierda">
+                    <img src={tB} alt="Imagen-Tratamiento-2"/>
+                </div>
+            </div>
+
+            <div className='card-background'>
+                    <div className="card-container">
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+                                
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+      <div className='service'>
+                
+                <div className="img-container">
+                    <img src={tC} alt="Imagen-Tratamiento-3"/>
+                </div>
+                
+                <div className='textService-container'>
+                    <h3 className="service-SubTitle">Tratamiento 1</h3>
+                    <p className="text-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam, unde placeat non perferendis excepturi rerum voluptate, at nostrum vitae quo facere nihil quibusdam eligendi incidunt cupiditate animi sit odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic tenetur exercitationem amet, officiis alias quisquam, voluptas quae architecto molestiae eaque suscipit magnam non expedita dolores. Ab praesentium saepe eum alias?</p>
+                </div>
+            </div>
+
+                <div className='card-background'>
+                    <div className="card-container">
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
+                                
+                        <div className='card-body'>
+                            <h2 className='card-title'>Alivio del dolor</h2>
+                            <p className='card-text'>Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor,restaurando tu confort y movilidad.</p>
+                        </div>
                     </div>
                 </div>
                 
 
-                <div className='cards-service'>
-                    <div className='card-service'>
-
-                            <h3 className='title-card'>Alivio del dolor</h3>
-                            <p className='text-card'>
-                                Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor, 
-                                restaurando tu confort y movilidad.
-                            </p>
-
-                        </div>
-
-                        <div className='card-service'>
-
-                            <h3 className='title-card'>Mejora de la movilidad y la flexibilidad</h3>
-                            <p className='text-card'>
-                            Mediante un plan de tratamiento individualizado, te ayudo a recuperar y mejorar la movilidad de tus articulaciones y músculos,
-                            aumentando tu flexibilidad y previniendo futuras limitaciones.
-                            </p>
-
-                        </div>
-
-                        <div className='card-service'>
-
-                            
-                            <h3 className='title-card'>Rehabilitación post lesión o cirugía</h3>
-                            <p className='text-card'>
-                            Te guío paso a paso en tu recuperación después de una lesión o cirugía, 
-                            utilizando métodos probados para restaurar tu funcionalidad y fuerza.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-            </article>
-
-            <article className='sArticleService-contaner'>
                 
-                <div className='content-service'>
-                    <div className='textService-container'>
-                        <h3>Tratamiento 2</h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ad dolore repellat mollitia voluptate similique esse dolorem? Corrupti,  nihil! Adipisci recusandae ipsa eos ipsum aliquam autem excepturi aperiam accusantium. Ab.
-                        </p>
-                    </div>
+        </div>
+     </section>
 
-                    <img className='imgService-container' src={tB} alt="img tratamiento 2" />
-                    
-                </div>
-
-                <div className='cards-service'>
-
-                    <div className='card-service'>
-
-                        
-                        <h3 className='title-card'>Alivio del dolor</h3>
-                        <p className='text-card'>
-                            Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor, 
-                            restaurando tu confort y movilidad.
-                        </p>
-
-                    </div>
-
-                    <div className='card-service'>
-
-                        
-                        <h3 className='title-card'>Mejora de la movilidad y la flexibilidad</h3>
-                        <p className='text-card'>
-                        Mediante un plan de tratamiento individualizado, te ayudo a recuperar y mejorar la movilidad de tus articulaciones y músculos,
-                        aumentando tu flexibilidad y previniendo futuras limitaciones.
-                        </p>
-
-                    </div>
-
-                    <div className='card-service'>
-
-                        
-                        <h3 className='title-card'>Rehabilitación post lesión o cirugía</h3>
-                        <p className='text-card'>
-                        Te guío paso a paso en tu recuperación después de una lesión o cirugía, 
-                        utilizando métodos probados para restaurar tu funcionalidad y fuerza.
-                        </p>
-
-                    </div>
-
-                </div>
-            </article>
-
-            <article className='fArticleService-container'>
-
-                <div className='content-service'>
-                    
-                    <img src={tC} alt="img tratamiento 3"  className='imgService-container'/>
-                    
-
-                    <div className='textService-container'>
-                        <h3>Tratamiento 3</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic tenetur exercitationem amet, officiis alias quisquam, voluptas quae architecto molestiae eaque suscipit magnam non expedita dolores. Ab praesentium saepe eum alias?
-                        </p>
-                    </div>
-                </div>
-                
-
-                <div className='cards-service'>
-                    <div className='card-service'>
-
-                            <h3 className='title-card'>Alivio del dolor</h3>
-                            <p className='text-card'>
-                                Utilizo técnicas avanzadas de terapia manual y ejercicios específicos para aliviar tu dolor, 
-                                restaurando tu confort y movilidad.
-                            </p>
-
-                        </div>
-
-                        <div className='card-service'>
-
-                            <h3 className='title-card'>Mejora de la movilidad y la flexibilidad</h3>
-                            <p className='text-card'>
-                            Mediante un plan de tratamiento individualizado, te ayudo a recuperar y mejorar la movilidad de tus articulaciones y músculos,
-                            aumentando tu flexibilidad y previniendo futuras limitaciones.
-                            </p>
-
-                        </div>
-
-                        <div className='card-service'>
-
-                            
-                            <h3 className='title-card'>Rehabilitación post lesión o cirugía</h3>
-                            <p className='text-card'>
-                            Te guío paso a paso en tu recuperación después de una lesión o cirugía, 
-                            utilizando métodos probados para restaurar tu funcionalidad y fuerza.
-                            </p>
-
-                        </div>
-
-                    </div>
-                </article>
-            </section>
         
     );
 };

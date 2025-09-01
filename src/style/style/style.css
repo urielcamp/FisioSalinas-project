@@ -167,8 +167,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 10px 60px 10px 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .about-Container .about-dt .container-img .img-about:hover {
   width: 105%;
@@ -497,6 +496,7 @@ html {
 }
 
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #eef3f9;
@@ -561,183 +561,210 @@ nav .ul-navbar .li-navbar a:hover {
   }
 }
 
-.service-container {
-  width: 100%;
-  height: 100%;
+.service-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
 }
-.service-container .tituloService {
+.service-section .service-title {
   font-size: 38px;
   font-weight: 400;
   color: #2b3b53;
   margin-top: 50px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
-.service-container .fArticleService-container {
+.service-section .service-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  /* Estilos de las cards */
 }
-.service-container .fArticleService-container .content-service {
+.service-section .service-container .service {
+  width: 80vw;
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
-  width: 100%;
-  height: 450px;
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   align-items: center;
-}
-.service-container .fArticleService-container .content-service .imgService-container {
-  width: 530px;
-  height: 380px;
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.service-container .fArticleService-container .content-service .imgService-container:hover {
-  width: 550px;
-  height: 390px;
-  margin: 20px;
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 500ms;
-}
-.service-container .fArticleService-container .content-service .textService-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.service-container .fArticleService-container .content-service .textService-container h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #2b3b53;
-}
-.service-container .fArticleService-container .content-service .textService-container p {
-  text-align: center;
-  width: 70%;
-  font-size: 18px;
-}
-.service-container .fArticleService-container .cards-service {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.service-container .fArticleService-container .cards-service .card-service {
-  background-color: #ffffff;
-  width: 20%;
-  height: 100%;
-  margin: 50px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 25pc 0 0 25pc;
+  padding: 25px;
   gap: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
-  padding: 20px;
 }
-.service-container .fArticleService-container .cards-service .card-service:hover {
-  transform: translateY(-15px);
-  transition: 500ms;
-  cursor: pointer;
+.service-section .service-container .service .service-SubTitle {
+  font-size: 38px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: start;
 }
-.service-container .fArticleService-container .cards-service .title-card {
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  color: #2b3b53;
+.service-section .service-container .service .text-service {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 500;
 }
-.service-container .fArticleService-container .cards-service .text-card {
-  text-align: center;
-  font-size: 12px;
-  width: 100%;
-}
-.service-container .sArticleService-contaner {
+.service-section .service-container .service .img-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-.service-container .sArticleService-contaner .content-service {
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
-  width: 100%;
-  height: 450px;
-  justify-items: center;
-  align-items: center;
-}
-.service-container .sArticleService-contaner .content-service .imgService-container {
-  width: 530px;
-  height: 380px;
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.service-container .sArticleService-contaner .content-service .imgService-container:hover {
-  width: 550px;
-  height: 390px;
-  margin: 20px;
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 500ms;
-}
-.service-container .sArticleService-contaner .content-service .textService-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  border-radius: 50%;
 }
-.service-container .sArticleService-contaner .content-service .textService-container h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #2b3b53;
+.service-section .service-container .service .img-container img {
+  width: 420px;
+  height: 420px;
+  object-fit: fill;
+  border-radius: 50%;
 }
-.service-container .sArticleService-contaner .content-service .textService-container p {
-  text-align: center;
-  width: 70%;
-  font-size: 18px;
+.service-section .service-container .service .img-container.img-izquierda {
+  justify-content: flex-end;
 }
-.service-container .sArticleService-contaner .cards-service {
+.service-section .service-container .service.izquierda {
+  border-radius: 0 25pc 25pc 0;
+}
+.service-section .service-container .card-background {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  height: 40vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-.service-container .sArticleService-contaner .cards-service .card-service {
-  width: 20%;
-  height: 100%;
-  margin: 50px;
-  border-radius: 10px;
+.service-section .service-container .card-background .card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+}
+.service-section .service-container .card-background .card-container .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
-  padding: 20px;
+  border-radius: 16px;
+  width: 320px;
+  height: 250px;
+  box-shadow: 2px 7px 13px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-color: #000000;
+  padding: 24px;
 }
-.service-container .sArticleService-contaner .cards-service .card-service:hover {
-  transform: translateY(-15px);
-  transition: 500ms;
-  cursor: pointer;
+.service-section .service-container .card-background .card-container .card-body .card-title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
 }
-.service-container .sArticleService-contaner .cards-service .title-card {
+.service-section .service-container .card-background .card-container .card-body .card-text {
+  line-height: 1.4;
+  margin: 10px 0 0 0;
   font-size: 18px;
-  text-align: center;
-  width: 100%;
-  color: #2b3b53;
-}
-.service-container .sArticleService-contaner .cards-service .text-card {
-  text-align: center;
-  font-size: 12px;
-  width: 100%;
+  color: #000000;
+  font-style: italic;
 }
 
+/* Maqueta celu */
+@media (max-width: 550px) {
+  .service-section .service-container .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    background-color: rgba(189, 189, 189, 0.5215686275);
+    padding: 0;
+    margin-bottom: 1.5rem;
+    border-radius: 0;
+  }
+  .service-section .service-container .service .service-SubTitle {
+    text-align: center;
+  }
+  .service-section .service-container .service .img-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .service-section .service-container .service.izquierda {
+    margin-top: 1.5rem;
+    border-radius: 0px;
+  }
+  .service-section .service-container .card-background {
+    height: 90vh;
+  }
+  .service-section .service-container .card-background .card-container {
+    flex-direction: column;
+    width: auto;
+  }
+  .service-section .service-container .card-background .card-container .card-body {
+    width: 250px;
+    padding: 16px;
+    margin-top: 2rem;
+  }
+}
+/* Maqueta tablet */
+@media (min-width: 551px) and (max-width: 900px) {
+  .service-section .service-container .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    background-color: rgba(189, 189, 189, 0.5215686275);
+    padding: 0;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+  }
+  .service-section .service-container .service .service-SubTitle {
+    text-align: center;
+  }
+  .service-section .service-container .service .img-container img {
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .service-section .service-container .service.izquierda {
+    margin-top: 3rem;
+    border-radius: 0px;
+  }
+  .service-section .service-container .card-background {
+    height: 90vh;
+  }
+  .service-section .service-container .card-background .card-container {
+    flex-direction: column;
+    width: auto;
+  }
+  .service-section .service-container .card-background .card-container .card-body {
+    width: 250px;
+    padding: 16px;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 901px) and (max-width: 1024px) {
+  .service-section .service-container .service {
+    width: 100vw;
+    background: linear-gradient(to right, rgba(179, 179, 255, 0.842), #ffffff);
+  }
+  .service-section .service-container .service.izquierda {
+    background: linear-gradient(to left, rgba(179, 179, 255, 0.842), #ffffff);
+  }
+  .service-section .service-container .card-background .card-container {
+    width: 100vw;
+  }
+  .service-section .service-container .card-background .card-container .card-body {
+    width: 300px;
+    padding: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .service-section .service-container .service {
+    background: linear-gradient(to right, rgba(179, 179, 255, 0.842), #ffffff);
+  }
+  .service-section .service-container .service.izquierda {
+    background: linear-gradient(to left, rgba(179, 179, 255, 0.842), #ffffff);
+  }
+}
 .hero-container {
   width: 100%;
   height: 90vh;
@@ -875,8 +902,7 @@ nav .ul-navbar .li-navbar a:hover {
 .clinics .clinic img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .clinics .clinic__overlay {
