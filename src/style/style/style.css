@@ -567,9 +567,16 @@ nav .ul-navbar .li-navbar a:hover {
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
-.service-section .service-title {
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title {
   font-size: 38px;
   font-weight: 400;
   color: #2b3b53;
@@ -577,15 +584,22 @@ nav .ul-navbar .li-navbar a:hover {
   margin-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
-.service-section .service-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Estilos de las cards */
+
+.service-SubTitle {
+  font-size: 38px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: start;
+  font-family: "Times New Roman", Times, serif;
 }
-.service-section .service-container .service {
-  width: 80vw;
+
+.service {
+  width: 65vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -594,175 +608,209 @@ nav .ul-navbar .li-navbar a:hover {
   padding: 25px;
   gap: 10px;
 }
-.service-section .service-container .service .service-SubTitle {
-  font-size: 38px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  text-align: start;
-}
-.service-section .service-container .service .text-service {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 22px;
-  font-weight: 500;
-}
-.service-section .service-container .service .img-container {
-  display: flex;
-  justify-content: flex-start;
-  border-radius: 50%;
-}
-.service-section .service-container .service .img-container img {
+.service img {
   width: 420px;
   height: 420px;
   object-fit: fill;
   border-radius: 50%;
 }
-.service-section .service-container .service .img-container.img-izquierda {
-  justify-content: flex-end;
+
+.text-service {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 500;
 }
-.service-section .service-container .service.izquierda {
+
+.img-container {
+  display: flex;
+  justify-content: start;
+  border-radius: 50%;
+}
+
+.izquierda {
   border-radius: 0 25pc 25pc 0;
 }
-.service-section .service-container .card-background {
+
+.img-izquierda {
+  justify-content: end;
+}
+
+.card-background {
   display: flex;
   align-items: center;
   height: 40vh;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.service-section .service-container .card-background .card-container {
+
+.card-container {
   display: flex;
   justify-content: space-around;
   width: 90vw;
 }
-.service-section .service-container .card-background .card-container .card-body {
+
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 16px;
   width: 320px;
-  height: 250px;
+  height: 280px;
   box-shadow: 2px 7px 13px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  border-color: #000000;
+  border-color: rgba(189, 189, 189, 0.5215686275);
   padding: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform, box-shadow;
 }
-.service-section .service-container .card-background .card-container .card-body .card-title {
+.card-body:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
   color: #000000;
   font-weight: bold;
   font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 1rem;
 }
-.service-section .service-container .card-background .card-container .card-body .card-text {
+
+.card-text {
   line-height: 1.4;
-  margin: 10px 0 0 0;
+  margin: 10px 0px 0px 0px;
   font-size: 18px;
   color: #000000;
   font-style: italic;
 }
 
-/* Maqueta celu */
 @media (max-width: 550px) {
-  .service-section .service-container .service {
+  .service {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
-    background-color: rgba(189, 189, 189, 0.5215686275);
-    padding: 0;
-    margin-bottom: 1.5rem;
+    width: 100vw;
+    background-color: #DBF2FA;
     border-radius: 0;
+    padding: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-  .service-section .service-container .service .service-SubTitle {
+  .textService-container {
+    width: 95%;
+  }
+  .textService-container p {
+    font-size: 22px;
+  }
+  .service-SubTitle {
+    font-size: 1.5rem;
     text-align: center;
   }
-  .service-section .service-container .service .img-container img {
+  .img-container img {
     width: 300px;
     height: 300px;
     border-radius: 10px;
   }
-  .service-section .service-container .service.izquierda {
-    margin-top: 1.5rem;
-    border-radius: 0px;
+  .card-background {
+    height: 100vh;
+    margin-top: 2rem;
   }
-  .service-section .service-container .card-background {
-    height: 90vh;
-  }
-  .service-section .service-container .card-background .card-container {
+  .card-container {
     flex-direction: column;
     width: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-  .service-section .service-container .card-background .card-container .card-body {
+  .card-body {
     width: 250px;
     padding: 16px;
     margin-top: 2rem;
   }
+  .izquierda {
+    margin-top: 5rem;
+  }
 }
-/* Maqueta tablet */
 @media (min-width: 551px) and (max-width: 900px) {
-  .service-section .service-container .service {
+  .service {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 95vh;
     width: fit-content;
-    background-color: rgba(189, 189, 189, 0.5215686275);
-    padding: 0;
+    background-color: #DBF2FA;
+    border-radius: 0;
+    padding: 0px;
     margin-bottom: 1.5rem;
     border-radius: 10px;
   }
-  .service-section .service-container .service .service-SubTitle {
+  .service-SubTitle {
     text-align: center;
   }
-  .service-section .service-container .service .img-container img {
+  .img-container img {
     width: 400px;
     height: 350px;
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .service-section .service-container .service.izquierda {
-    margin-top: 3rem;
-    border-radius: 0px;
+  .card-background {
+    height: 100vh;
+    margin-bottom: 4rem;
   }
-  .service-section .service-container .card-background {
-    height: 90vh;
-  }
-  .service-section .service-container .card-background .card-container {
+  .card-container {
     flex-direction: column;
     width: auto;
+    gap: 2rem;
   }
-  .service-section .service-container .card-background .card-container .card-body {
+  .card-body {
     width: 250px;
     padding: 16px;
     margin-top: 2rem;
   }
+  .izquierda {
+    margin-top: 3rem;
+  }
 }
 @media (min-width: 901px) and (max-width: 1024px) {
-  .service-section .service-container .service {
+  .service {
+    width: 90vw;
+    background: linear-gradient(to right, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+  }
+  .izquierda {
+    background: linear-gradient(to left, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+  }
+  .card-container {
     width: 100vw;
-    background: linear-gradient(to right, rgba(179, 179, 255, 0.842), #ffffff);
+    gap: 1rem;
   }
-  .service-section .service-container .service.izquierda {
-    background: linear-gradient(to left, rgba(179, 179, 255, 0.842), #ffffff);
-  }
-  .service-section .service-container .card-background .card-container {
-    width: 100vw;
-  }
-  .service-section .service-container .card-background .card-container .card-body {
+  .card-body {
     width: 300px;
-    padding: 14px;
+    padding: 12px;
+  }
+  .card-background {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .service-SubTitle {
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 1440px) {
-  .service-section .service-container .service {
-    background: linear-gradient(to right, rgba(179, 179, 255, 0.842), #ffffff);
+  .service {
+    background: linear-gradient(to right, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
   }
-  .service-section .service-container .service.izquierda {
-    background: linear-gradient(to left, rgba(179, 179, 255, 0.842), #ffffff);
+  .izquierda {
+    background: linear-gradient(to left, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+  }
+  .service-SubTitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 }
 .hero-container {

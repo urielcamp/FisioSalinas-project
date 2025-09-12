@@ -1,277 +1,253 @@
 .service-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin-top: 2rem;
+}
+.service-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.service-title {
+	font-size: 38px;
+	font-weight: 400;
+	color: #2b3b53;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	text-align: center;
+   font-family: "Times New Roman", Times, serif;
+}
+.service-SubTitle {
+	font-size: 38px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+  margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: start;
+     font-family: "Times New Roman", Times, serif;
+
+}
+.service {
+	width: 65vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	align-items: center;
+	border-radius: 25pc 0 0 25pc;
+	padding: 25px;
+	gap: 10px;
+	img {
+		width: 420px;
+		height: 420px;
+		object-fit: fill;
+		border-radius: 50%;
+	}
+}
+.text-service {
+ font-family: "Times New Roman", Times, serif;  
+ font-size: 22px;
+	font-weight: 500;
+}
+
+.img-container {
+	display: flex;
+	justify-content: start;
+	border-radius: 50%;
+}
+.izquierda {
+	border-radius: 0 25pc 25pc 0;
+}
+.img-izquierda {
+	justify-content: end;
+}
+.card-background {
+	display: flex;
+	align-items: center;
+	height: 40vh;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.card-container {
+	display: flex;
+	justify-content: space-around;
+	width: 90vw;
+}
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 1.5rem;
+  border-radius: 16px;
+  width: 320px;
+  height: 280px;
+  box-shadow: 2px 7px 13px 1px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border-color: #bdbdbd85;
+  padding: 24px;
 
-  .service-title {
-    font-size: 38px;
-    font-weight: 400;
-    color: #2b3b53;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center;
-  }
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform, box-shadow;
 
-  .service-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .service {
-      width: 80vw;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      align-items: center;
-      border-radius: 25pc 0 0 25pc;
-      padding: 25px;
-      gap: 10px;
-
-      .service-SubTitle {
-        font-size: 38px;
-        font-weight: 400;
-        color: #000000;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-        text-align: start;
-      }
-
-      .text-service {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 22px;
-        font-weight: 500;
-      }
-
-      .img-container {
-        display: flex;
-        justify-content: flex-start;
-        border-radius: 50%;
-
-        img {
-          width: 420px;
-          height: 420px;
-          object-fit: fill;
-          border-radius: 50%;
-        }
-
-        &.img-izquierda {
-          justify-content: flex-end;
-        }
-      }
-
-      &.izquierda {
-        border-radius: 0 25pc 25pc 0;
-      }
-    }
-
-    /* Estilos de las cards */
-    .card-background {
-      display: flex;
-      align-items: center;
-      height: 40vh;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-
-      .card-container {
-        display: flex;
-        justify-content: space-around;
-        width: 90vw;
-
-        .card-body {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          border-radius: 16px;
-          width: 320px;
-          height: 250px;
-          box-shadow: 2px 7px 13px 1px rgba(0, 0, 0, 0.2);
-          overflow: hidden;
-          border-color: #000000;
-          padding: 24px;
-
-          .card-title {
-            color: #000000;
-            font-weight: bold;
-            font-size: 22px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            margin-bottom: 1rem;
-          }
-
-          .card-text {
-            line-height: 1.4;
-            margin: 10px 0 0 0;
-            font-size: 18px;
-            color: #000000;
-            font-style: italic;
-          }
-        }
-      }
-    }
+  &:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
   }
 }
 
-/* Maqueta celu */
+.card-title {
+	color:  #000000;
+	font-weight: bold;
+	font-size: 22px;
+ font-family: "Times New Roman", Times, serif;	
+ margin: 0px;
+	padding: 0px;
+	margin-bottom: 1rem;
+}
+.card-text {
+	line-height: 1.4;
+	margin: 10px 0px 0px 0px;
+	font-size: 18px;
+	color: #000000;
+	font-style: italic;
+}
 @media (max-width: 550px) {
-  .service-section {
-    .service-container {
-      .service {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: fit-content;
-        background-color: #bdbdbd85;
-        padding: 0;
-        margin-bottom: 1.5rem;
-        border-radius: 0;
+	.service {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		background-color:#DBF2FA;
+		border-radius: 0;
+    padding: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
 
-        .service-SubTitle {
-          text-align: center;
-        }
+  .textService-container{
+  width: 95%;
 
-        .img-container {
-          img {
-            width: 300px;
-            height: 300px;
-            border-radius: 10px;
-          }
-        }
-
-        &.izquierda {
-            margin-top: 1.5rem;
-            border-radius: 0px;
-
-        }
-      }
-
-      .card-background {
-        height: 90vh;
-
-        .card-container {
-          flex-direction: column;
-          width: auto;
-
-          .card-body {
-            width: 250px;
-            padding: 16px;
-            margin-top: 2rem;
-          }
-        }
-      }
-    }
+  p{
+    font-size: 22px;
   }
 }
 
-/* Maqueta tablet */
+	.service-SubTitle {
+    	font-size: 1.5rem;
+		text-align: center;
+	}
+	.img-container {
+		img {
+			width: 300px;
+			height: 300px;
+			border-radius: 10px;
+		}
+	}
+	.card-background {
+		height: 100vh;
+    margin-top: 2rem;
+	}
+	.card-container {
+		flex-direction: column;
+		width: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+	}
+	.card-body {
+		width: 250px;
+		padding: 16px;
+		margin-top: 2rem;
+	}
+	.izquierda {
+		margin-top: 5rem;
+	}
+}
 @media (min-width: 551px) and (max-width: 900px) {
-  .service-section {
-    .service-container {
-      .service {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: fit-content;
-        background-color: #bdbdbd85;
-        padding: 0;
-        margin-bottom: 1.5rem;
-        border-radius: 10px;
-
-        .service-SubTitle {
-          text-align: center;
-        }
-
-        .img-container {
-          img {
-            width: 400px;
-            height: 350px;
-            border-radius: 10px;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-          }
-        }
-
-        &.izquierda {
-            margin-top: 3rem;
-            border-radius: 0px;
-
-        }
-      }
-
-      .card-background {
-        height: 90vh;
-
-        .card-container {
-          flex-direction: column;
-          width: auto;
-
-          .card-body {
-            width: 250px;
-            padding: 16px;
-            margin-top: 2rem;
-          }
-        }
-      }
-    }
-  }
+	.service {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    height: 95vh;
+		width: fit-content;
+		background-color:#DBF2FA;
+		border-radius: 0;
+		padding: 0px;
+		margin-bottom: 1.5rem;
+		border-radius: 10px;
+	}
+	.service-SubTitle {
+    text-align: center;
+	}
+	.img-container {
+		img {
+			width: 400px;
+			height: 350px;
+			border-radius: 10px;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+	.card-background {
+		height: 100vh;
+    margin-bottom: 4rem;
+	}
+	.card-container {
+		flex-direction: column;
+		width: auto;
+    	gap: 2rem;
+	}
+	.card-body {
+		width: 250px;
+		padding: 16px;
+		margin-top: 2rem;
+	}
+	.izquierda {
+		margin-top: 3rem;
+	}
 }
-
 @media (min-width: 901px) and (max-width: 1024px) {
-  .service-section {
-    .service-container {
-      .service {
-        width: 100vw;
-        background: linear-gradient(
-          to right,
-          rgba(179, 179, 255, 0.842),
-          #ffffff
-        );
-
-        &.izquierda {
-          background: linear-gradient(
-            to left,
-            rgba(179, 179, 255, 0.842),
-            #ffffff
-          );
-        }
-      }
-
-      .card-background {
-        .card-container {
-          width: 100vw;
-
-          .card-body {
-            width: 300px;
-            padding: 14px;
-          }
-        }
-      }
-    }
+	.service {
+		width: 90vw;
+		background: linear-gradient(to right, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+	}
+	.izquierda {
+		background: linear-gradient(to left, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+	}
+	.card-container {
+		width: 100vw;
+    gap: 1rem;
+	}
+	.card-body {
+		width: 300px;
+		padding: 12px;
+	}
+  .card-background{
+    margin-top: 0;
+    margin-bottom: 0;
   }
+.service-SubTitle{
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
+}
 @media (min-width: 1440px) {
-  .service-section {
-    .service-container {
-      .service {
-        background: linear-gradient(
-          to right,
-          rgba(179, 179, 255, 0.842),
-          #ffffff
-        );
+	.service {
+		background: linear-gradient(to right, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+	}
+	.izquierda {
+		background: linear-gradient(to left, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
+	}
 
-        &.izquierda {
-          background: linear-gradient(
-            to left,
-            rgba(179, 179, 255, 0.842),
-            #ffffff
-          );
-        }
-      }
-    }
-  }
+	.service-SubTitle{
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
 }
