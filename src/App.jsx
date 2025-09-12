@@ -20,7 +20,7 @@ const App = () => {
   return (
     <>
       <Header/>
-      <WhatsAppButton/>
+    {/*   <WhatsAppButton/>
       <Hero/>
       <Info/>
       <About/>
@@ -30,7 +30,7 @@ const App = () => {
       <Carrousel/>
       <Contact/>
       <Footer/>
-       {/*  */}
+        */}
     </>
   )
 }
