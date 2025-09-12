@@ -65,7 +65,7 @@ const Carroucel = () => {
                 spaceBetween: 30,
               },
               "@1.75": {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 20,
               },
             }}
