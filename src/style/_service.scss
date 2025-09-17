@@ -213,12 +213,17 @@
 }
 @media (min-width: 901px) and (max-width: 1024px) {
 	.service {
-		width: 90vw;
+		width: 100%;
 		background: linear-gradient(to right, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
 	}
 	.izquierda {
 		background: linear-gradient(to left, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
 	}
+
+	.card-background{
+		height: 50vh;
+	}
+
 	.card-container {
 		width: 100vw;
     gap: 1rem;
@@ -237,7 +242,7 @@
 }
 
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
 	.service {
 		background: linear-gradient(to right, rgba(165, 223, 243, 0.842), rgb(255, 255, 255));
 	}
@@ -250,4 +255,12 @@
   margin-bottom: 1.5rem;
 }
 
+}
+
+
+@media (min-width: 1025px) and (max-width: 1444px){
+
+.service{
+	width: 95vw;
+}
 }

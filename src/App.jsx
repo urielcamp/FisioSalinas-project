@@ -20,17 +20,17 @@ const App = () => {
   return (
     <>
       <Header/>
-    <WhatsAppButton/>
+      <WhatsAppButton/>
       <Hero/>
-      <Info/>
+     <Info/>
       <About/>
-      <Service/>
-      <Inf/>
-      <Clinics/>
-      <Carrousel/>
+      {/*   <Service/>*/}
+      {/* <Inf/>
+      <Clinics/> */}
+      {/* <Carrousel/>*/}
       <Contact/>
       <Footer/>
-      
+      {/* */}
     </>
   )
 }
