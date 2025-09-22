@@ -141,7 +141,11 @@
         }
     }
 
-    /* Responsive */
+  
+}
+}
+
+  /* Responsive */
     @media (max-width: 768px) {
         gap: 0.8rem;
 
@@ -149,7 +153,8 @@
         justify-content: center; // centrado en móviles
         }
     }
-}
+
+
 
 
     @media (max-width: 1024px) {
@@ -199,5 +204,4 @@
         }
         }
     }
-}
 }
